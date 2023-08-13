@@ -1,0 +1,125 @@
+/* NavBar */
+
+nav {
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    flex-basis: 25%;
+    text-align: center;
+    padding: 7px 5px 4px 5px;
+    text-decoration: none;
+    color: black;
+}
+
+nav p {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+nav ul span {
+    font-size: 27px!important;
+    color: #9aa3aa;
+    /* color: #d5d7d6; */
+}
+
+/* nav a:active {
+    background: transparent;
+}
+
+nav i:active {
+    color: transparent;
+} */
+
+nav span.active {
+    color: green;
+}
+
+
+/* AppUtils */
+
+.app-utils {
+    /* position: sticky;
+    top: 0; */
+    padding: 7px 3px 7px 7px;
+    width: 100%;
+
+    display: flex;
+    /* background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8); */
+}
+
+.app-utils__search {
+    flex-basis: 90%;
+    margin-right: 6px;
+}
+
+.app-utils__search input {
+    width: 100%;
+    padding: 15px 25px;
+	border-radius: 20px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.app-utils__account {
+    flex-basis: 10%;
+}
+
+.app-utils span {
+    font-size: 50px;
+    color: #9aa3aa;
+}
+
+
+/* section option */
+
+.section-option {
+    padding: 5px;
+}
+
+.option-list {
+    display: flex;
+
+    padding: 10px;
+}
+
+.option-item {
+    flex-grow: 1;
+
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.option-item__header {
+    flex-basis: 90%!important;
+    background-color: #f7f7f7;
+}
+
+.option-item__header i {
+    font-size: 50px;
+    margin: 10px 5px;
+}
+
+.option-item__body {
+    flex-basis: 10%!important;
+}
